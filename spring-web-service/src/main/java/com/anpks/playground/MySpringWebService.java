@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class Application {
+public class MySpringWebService {
 	@GetMapping("/")
 	String home() {
 		return "Hello World!";
 	}
 
     public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(MySpringWebService.class, args);
 	}
   
 }
